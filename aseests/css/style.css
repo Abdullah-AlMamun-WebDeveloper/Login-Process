@@ -1,0 +1,450 @@
+/************************************* GOOGLE FONTS **************************************/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/****************************************************BASE*****************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+}
+.container {
+  width: 1120px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+/********************************************REUSABLE CSS CLASSES***********************************/
+/********************************************STEP---111111***********************************/
+
+.step {
+  height: 100vh;
+  width: 100vw;
+  background: url("../image/Intersect.png") no-repeat top;
+  /* ./aseests/image/Intersect.png */
+}
+.content-step.mt-110 {
+  margin-top: 110px !important;
+}
+.step-1 {
+  width: 1385px;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0;
+  position: relative;
+}
+.step-1 .bg-step {
+  overflow: hidden;
+}
+
+.position-step {
+  width: 100%;
+  padding: 0px 20px;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.apply_box {
+  max-width: 680px;
+  padding-top: 43px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 102px;
+  margin-bottom: 174px;
+  text-align: center;
+  box-shadow: 0px 4px 3px 3px rgba(1, 1, 1, 0.1);
+  border-radius: 10px;
+  display: none;
+}
+.apply_box#login-box {
+  display: block;
+}
+.apply_box .content-step {
+  width: 75%;
+  margin: auto;
+}
+.apply_box .logo img {
+  width: 18%;
+}
+.apply_box h2 {
+  color: #4153b3;
+  font-family: "Roboto", sans-serif;
+  font-size: 21.997px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 9px;
+}
+
+.apply_box form {
+  margin-top: 23px;
+}
+.apply_box form .form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+.apply_box form .form_container .form_control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.apply_box form .form_container .form_control label {
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.apply_box form .form_container .form_control .input {
+  padding: 14px 10px;
+  color: #758590;
+  font-family: "Public Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+.apply_box form .checkbox {
+  margin-top: 35px;
+  padding-bottom: 72px;
+  text-align: left !important;
+}
+.apply_box form .checkbox label {
+  color: #758590;
+  font-family: "Public Sans", sans-serif;
+  font-size: 11.621px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 175%;
+  padding: 0px 4px;
+}
+.apply_box form .button_content {
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.apply_box form .button_content .btn-step {
+  padding: 9.8px 10px 9.2px;
+  border-radius: 1px;
+  background: #4153b3;
+}
+.apply_box form .button_content a {
+  text-decoration: none;
+}
+.apply_box form .button_content button {
+  color: #fff;
+  background: #4153b3;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.apply_box .register-step {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.apply_box .register-step p {
+  color: #758590;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 11.95px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.apply_box .register-step a {
+  color: #7455f7;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 11.95px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.apply_box .username-step {
+  padding: 34px 0px 71px;
+}
+.apply_box .username-step .content-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 14px 12px 20px;
+  border: 1px solid #7455f7;
+  background-color: #ffffff;
+}
+.apply_box .username-step .content-user p {
+  color: #7455f7;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 15.049px;
+  text-align: left;
+}
+.apply_box .username-step .content-user .logo-user {
+  background: #7455f7;
+  padding: 6.42px 5.42px 1.42px 5.42px;
+  border-radius: 1.833px;
+  cursor: pointer;
+}
+
+/********************************************STEP---222222***********************************/
+
+.apply_box .card-step {
+  width: 95%;
+  padding-bottom: 12px;
+}
+.card-body {
+  padding: 40px 0px;
+}
+.card-body .dm-step {
+  width: 100%;
+}
+.line-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 0px 75px;
+  margin: auto;
+}
+.dash {
+  flex: auto;
+  height: 2px;
+  width: auto;
+  background-color: #d4d4d4;
+}
+.card-body .row {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+.card-body .row .col-1-3 {
+  flex-basis: 33%;
+}
+.card-body .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.content span.text {
+  position: absolute;
+  margin-top: 10px;
+  top: 50%;
+  transform: translateY(50%);
+  line-break: strict;
+  white-space: nowrap;
+}
+.card-body .image-step img {
+  width: 100%;
+}
+.card-body .count {
+  display: flex;
+  width: 32px;
+  height: 31px;
+  padding: 6px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 90px;
+  background: #d4d4d4;
+  color: #ffffff;
+}
+.line-row .active.dash {
+  background: #4153b3;
+}
+.line-row .active .count {
+  background: #4153b3;
+}
+.card-body .row .col-1-3 .color-count {
+  background: #4153b3;
+}
+.card-body .row .col-1-3 .text {
+  color: #888;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.none {
+  display: none;
+}
+
+.card-body .row .col-1-3 .color-step {
+  color: #4153b3;
+}
+
+/********************row-step2*****************/
+.card-box {
+  max-width: 780px;
+}
+.row-step2 {
+  padding-top: 68px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.row-step2 .col-1-2 {
+  flex-basis: 48%;
+  text-align: left;
+}
+.row-step2 .extra-step {
+  flex-basis: 55%;
+}
+.row-step2 .col-1-2 h4 {
+  color: #212b36;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 14px;
+}
+.apply_box .uploaded {
+  width: 100%;
+}
+.row-step2 .col-1-2 .upload-step1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.row-step2 .col-1-2 .upload-step1 p {
+  color: #758590;
+  font-family: "Public Sans", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.176px;
+  margin-top: 30px;
+}
+.row-step2 .col-1-2 .upload-step2 {
+  width: 44%;
+  cursor: pointer;
+}
+.row-step2 .col-1-2 .upload-step3 {
+  width: 100%;
+  border: 2px dashed #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 33px 15px;
+}
+.row-step2 .col-1-2 .upload-text {
+  color: #4b5864;
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.apply_box .step-address {
+  margin: 0;
+}
+.apply_box form .form_container .form_control .address {
+  width: 100%;
+}
+.apply_box form .form_container .form_control .input-step {
+  padding-bottom: 25px;
+}
+
+.apply_box form .form_container h2 {
+  color: #333;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 5px;
+}
+
+.apply_box form .form_container .form_control .identy-step {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e4e4e4;
+  align-items: center;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+.apply_box form .form_container .form_control .identy-step .form-select {
+  border: none;
+  background: #fff;
+  color: #bfbfbf;
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 14px;
+}
+.apply_box form .form_container .form_control .identy-step .select-img {
+  width: 5%;
+}
+.apply_box form .form_container .form_control .identy-step .select-img img {
+  width: 100%;
+  cursor: pointer;
+}
+.row-step2 .col-1-2 .extra-step {
+  flex-direction: column;
+  gap: 20px;
+}
+.row-step2 .col-1-2 .extra-step p {
+  margin: 0;
+}
+.apply_box form .next-content {
+  display: flex;
+  justify-content: flex-end;
+}
+.apply_box form .next-content .btn-step {
+  border-radius: 4px;
+  background: #4153b3;
+  padding: 9px 32px;
+  box-shadow: 4px 4px 10px 0px rgba(65, 83, 179, 0.15);
+}
+
+form .button-step {
+  display: flex;
+  gap: 26px;
+  justify-content: flex-end;
+}
+
+.apply_box form .back-content .btn-step {
+  border-radius: 4px;
+  background: #ccc;
+  box-shadow: 4px 4px 10px 0px rgba(65, 83, 179, 0.15);
+}
+
+.apply_box form .back-content button {
+  background: #ccc;
+  color: rgba(36, 36, 36, 0.87);
+  font-size: 14px;
+}
